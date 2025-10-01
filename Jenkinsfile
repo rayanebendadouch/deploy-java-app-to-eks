@@ -3,6 +3,9 @@ agent any
 tools {
 maven 'maven3'
 }
+triggers{
+   githubPush()
+}
 stages{
 stage("checkout"){
 steps{
